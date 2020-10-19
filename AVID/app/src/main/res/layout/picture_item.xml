@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/cardview_light_background"
+    app:cardCornerRadius="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/picture_img"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:padding="10dp"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/picture_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Key"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/picture_img"
+
+            />
+
+        <TextView
+            android:id="@+id/picture_caregiver_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parent Message"
+            android:textSize="15sp"
+            android:layout_below="@+id/picture_key"/>
+
+        <TextView
+            android:id="@+id/picture_caregiver_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parent Message"
+            android:textSize="15sp"
+            android:layout_below="@+id/picture_key"
+            android:layout_toRightOf="@+id/picture_caregiver_title"/>
+
+        <TextView
+            android:id="@+id/picture_child_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parent Message"
+            android:textSize="15sp"
+            android:layout_below="@+id/picture_caregiver_msg"/>
+
+        <TextView
+            android:id="@+id/picture_child_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Child Message"
+            android:textSize="15sp"
+            android:layout_below="@+id/picture_caregiver_msg"
+            android:layout_toRightOf="@+id/picture_child_title"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

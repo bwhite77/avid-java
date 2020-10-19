@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_playground"
+            android:icon="@android:drawable/ic_menu_report_image"
+            android:title="Playground"/>
+        <item android:id="@+id/nav"
+            android:icon="@android:drawable/ic_input_add"
+            android:title="Create"/>
+        <item android:id="@+id/nav_membership"
+            android:icon="@android:drawable/ic_menu_help"
+            android:title="Membership"/>
+        <item android:id="@+id/nav_options"
+            android:icon="@android:drawable/ic_menu_preferences"
+            android:title="Options"/>
+
+    </group>
+
+</menu>
